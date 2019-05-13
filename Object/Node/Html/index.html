@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exrecicios Html</title>
+    <style>
+    #conteudo {
+        padding: 50px 0px;
+
+    }
+    </style>
+</head>
+<body>
+    <header><h1>Exercicios Html</h1></header>
+    <nav><a href fs-link="Exercicios/exercicios.html" > 00 - teste</a></nav>
+    <nav><a href fs-link="Exercicios/test.html"> 01 - teste1</a></nav>
+    <nav><a href fs-link="Exercicios/listaAninhada.html"> 02 - lista aninhada</a></nav>
+    <nav><a href fs-link="Exercicios/Form/form.html"> 04 - Formulario</a></nav>
+    <section id="conteudo"></section>
+    <FOOter>Curso de web moderno!!</FOOter>
+    <script>
+        document.querySelectorAll('[fs-link]').forEach(link =>{
+            link.onclick = function(e){
+                e.preventDefault()
+                const conteudo = document.getElementById('conteudo')
+                fetch(link.getAttribute('fs-link'))
+                .then(resp => resp.text())
+                .then(html => conteudo.innerHTML = html)
+            }
+        })
+
+    </script>
+</body>
+</html>
