@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id": 2,
+      "name": "jonas santos",
+      "email": "jon@123.com"
+    },
+    {
+      "name": "panela thoni",
+      "email": "ptms@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "Fabio Silva",
+      "email": "fabiofos@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "pita",
+      "email": "pita@q1234",
+      "id": 5
+    }
+  ]
+}
